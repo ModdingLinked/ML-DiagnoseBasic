@@ -115,7 +115,7 @@ QList<PluginSetting> DiagnoseBasic::settings() const
 {
   return QList<PluginSetting>()
       << PluginSetting("check_errorlog", tr("Warn when an error occurred last time an application was run"), true)
-      << PluginSetting("check_overwrite", tr("Warn when there are files in the overwrite directory"), true)
+      << PluginSetting("check_overwrite", tr("Warn when there are files in the overwrite directory"), false)
       << PluginSetting("check_font", tr("Warn when the font configuration refers to files that aren't installed"), true)
       << PluginSetting("check_conflict", tr("Warn when mods are installed that conflict with MO functionality"), true)
       << PluginSetting("check_missingmasters", tr("Warn when there are esps with missing masters"), true)
